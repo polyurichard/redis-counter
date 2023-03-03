@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  web1:
+    build: .
+    image: web
+    ports:
+      - "8001:5000"
+  web2:
+    build: .
+    image: web
+    ports:
+      - "8002:5000"
+  web3:
+    build: .
+    image: web
+    ports:
+      - "8003:5000"
+  redis:
+    image: "redis:alpine"
