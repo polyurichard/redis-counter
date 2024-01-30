@@ -20,7 +20,7 @@ docker-compose -f docker-compose-2.yaml up
 Navigates to http://localhost:8001, http://localhost:8002, http://localhost:8003
 
 
-## Example 3
+
 
 
 Reference:
