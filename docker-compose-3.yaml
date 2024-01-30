@@ -1,0 +1,14 @@
+# docker-compose  -f docker-compose-3.yaml up
+version: "3.9"
+services:
+  web1:
+    build: .
+    image: web
+    ports:
+      - "8001:5000"
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "16379:6379"
+    volumes:
+      - ./redis-data:/data
